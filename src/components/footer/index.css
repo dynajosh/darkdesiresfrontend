@@ -1,0 +1,12 @@
+.footer-bg {
+    background-color: #000000;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bg {
+    font-size: 18px;
+    font-family: 'SpeakBold';
+}

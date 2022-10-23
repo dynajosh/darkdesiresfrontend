@@ -1,0 +1,271 @@
+.modal-container {
+    border-radius: 30px 30px 0px 0px;
+}
+
+.modal-main-area {
+    gap: 20px;
+}
+
+.close-row {
+    display: flex;
+    justify-content: end;
+}
+.create-text {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'SpeakBold';
+}
+
+.title-input {
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 15px;
+    outline: none;
+    border: solid 1.5px #B5B7BA;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.title-input ::placeholder {
+    color: #6B7074;
+    font-weight: 400;
+}
+
+.modal-label {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.5%;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-family: 'SpeakBold' !important;
+}
+
+.modal-text-area {
+    min-height: 350px;
+    border: solid 1.5px #B5B7BA;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 22px;
+    outline: none;
+    margin-bottom: 10px;
+
+}
+
+.modal-button {
+    border-radius: 10px;
+    padding: 15px;
+    width: 120px;
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(90deg, #002855 0%, rgba(0, 40, 85, 0.8) 71.17%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: min-content;
+}
+
+.inactive-modal-button {
+    border-radius: 10px;
+    padding: 15px;
+    width: 120px;
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    background: rgb(179, 179, 179);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: min-content;
+}
+
+.modal-form {
+    gap: 20px;
+}
+
+.modal-form div {
+    gap: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.date-picker {
+    background-color: #fff;
+    border: solid 1px #002855;
+    color: #002855;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: min-content;
+}
+
+.error-div {
+    margin: 0;
+    color: red;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.success-div {
+    margin: 0;
+    color: green;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.upload-element {
+    border-radius: 10px;
+    padding: 15px;
+    width: max-content;
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(90deg, #002855 0%, rgba(0, 40, 85, 0.8) 71.17%);
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.upload-label {
+    width: max-content;
+}
+
+.preview-container {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preview-container h4{
+    color: #909397;
+    font-size: 50px;
+    font-family: 'SpeakBold' !important;
+    margin: 0px;
+
+}
+
+.preview-image {
+    width: auto;
+    height: 300px;
+}
+
+@media only screen and (max-width:767px) {
+    .create-text {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 800;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .modal-label {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .title-input {
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 10px;
+        outline: none;
+        border: solid 1.5px #B5B7BA;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .title-input ::placeholder {
+        color: #6B7074;
+        font-weight: 400;
+    }
+    .error-div {
+        margin: 0;
+        color: red;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .success-div {
+        font-size: 13PX;
+    }
+    .modal-text-area {
+        min-height: 170px;
+        font-size: 16px;
+    }
+    .modal-button {
+        border-radius: 10px;
+        padding: 10px;
+        width: 50%;
+        border: none;
+        font-size: 18px;
+        line-height: 22px;
+        background: linear-gradient(90deg, #002855 0%, rgba(0, 40, 85, 0.8) 71.17%);
+        color: #fff;
+        /* margin-bottom: 20px; */
+    }
+    .date-picker {
+        background-color: #fff;
+        border: solid 1px #002855;
+        color: #002855;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .upload-element {
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        line-height: 20px;
+        background: linear-gradient(90deg, #002855 0%, rgba(0, 40, 85, 0.8) 71.17%);
+        color: #fff;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .preview-container h4{
+        color: #909397;
+        font-size: 30px;
+        font-family: 'SpeakBold' !important;
+    
+    }
+    
+}
+
+.pointer {
+    cursor: -webkit-pointer;
+    cursor: pointer;
+}
+
+.max-content {
+    width: max-content;
+}
+.button-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.button-items-row {
+    display: flex;
+    align-items: center;
+}

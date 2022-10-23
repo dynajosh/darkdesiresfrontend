@@ -1,24 +1,22 @@
+import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from './screens/home/Home';
+import { ModalStateContext } from './context/modalContext';
+import { NewItemContext } from './context/newItemContext';
+import Footer from './components/footer';
 
 function App() {
+  const [createModalState, setCreateModalState] = useState(false);
+  const [newItem, setNewItem] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ModalStateContext.Provider value={{createModalState, setCreateModalState}}>
+      <NewItemContext.Provider value={{newItem, setNewItem}}>
+        <Home />
+        <Footer />
+      </NewItemContext.Provider>
+    </ModalStateContext.Provider>
   );
 }
 
